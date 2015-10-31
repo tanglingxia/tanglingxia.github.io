@@ -4,12 +4,13 @@ body {
 }
 
 #g-header {
-  background: url(../images/background-header.jpg) no-repeat center top;
   height: 200px;
 }
 
 #g-container h1.m-page-title {
   margin: 1em 0;
   text-align: center;
+  font-size: 52px;
   color: orchid;
+  font-family: monospace;
 }
