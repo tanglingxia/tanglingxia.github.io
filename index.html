@@ -4,6 +4,20 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>i love you</title>
   <link rel="stylesheet" media="all" href="./20151111/css/main.css"/>
+  <script type='text/javascript' src='./javascripts/vendor/jquery.min.js'></script>
+  <script type='text/javascript' src='./javascripts/vendor/snowfall.jquery.js'></script>
+  <script type='text/javascript' src='./20151111/js/main.js'></script>
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      $(document).snowfall('clear');
+      $(document).snowfall({
+        image: "./20151111/images/rose.png",
+        flakeCount: 22,
+        minSize: 16,
+        maxSize: 48
+      });
+    });
+  </script>
 </head>
 <body>
   <div id='g-header'></div>

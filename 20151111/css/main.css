@@ -4,9 +4,8 @@ body {
 }
 
 #g-header {
-  background: url(../images/background-header.jpg);
+  background: url(../images/background-header.jpg) no-repeat center top;
   height: 200px;
-  background-repeat: no-repeat;
 }
 
 #g-container h1.m-page-title {
