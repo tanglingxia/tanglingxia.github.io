@@ -28,7 +28,9 @@
         changeBackgroundByName(scrollImageNames[Math.ceil(Math.random() * scrollImageNames.length - 1)]);
       }
 
-      randomChangeBackground();
+      window.setTimeout(function() {
+        randomChangeBackground();
+      }, 320);
 
       window.setInterval(function() {
         randomChangeBackground();
