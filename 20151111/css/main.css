@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#g-header {
+  background: url(../images/background-header.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+#g-container h1.m-page-title {
+  margin: 1em 0;
+  text-align: center;
+  color: orchid;
+}
