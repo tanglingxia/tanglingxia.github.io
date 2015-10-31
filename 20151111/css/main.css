@@ -4,6 +4,7 @@ body {
 }
 
 #g-header {
+  background: url(../images/background-header.jpg) no-repeat center top;
   height: 200px;
 }
 
