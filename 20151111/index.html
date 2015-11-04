@@ -5,8 +5,8 @@
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>i love you</title>
   <link rel="stylesheet" media="all" href="./css/main.css"/>
-  <script type='text/javascript' src='./javascripts/vendor/jquery.min.js'></script>
-  <script type='text/javascript' src='./javascripts/vendor/snowfall.jquery.js'></script>
+  <script type='text/javascript' src='../javascripts/vendor/jquery.min.js'></script>
+  <script type='text/javascript' src='../javascripts/vendor/snowfall.jquery.js'></script>
   <script type='text/javascript' src='./js/main.js'></script>
   <script type='text/javascript'>
     $(document).ready(function() {
@@ -22,6 +22,7 @@
 
       var changeBackgroundByName = function(name) {
         $('body').css('background', "url(./images/scroll/" + name + ") no-repeat center top");
+        $('body').css('background-attachment', "fixed");
       }
 
       var randomChangeBackground = function() {
@@ -30,20 +31,20 @@
 
       window.setTimeout(function() {
         randomChangeBackground();
-      }, 5000);
+      }, 1000);
 
       window.setInterval(function() {
         randomChangeBackground();
-      }, 5000 * 60);
+      }, 1000 * 40);
     });
   </script>
 </head>
 <body>
-  <div id='g-header'></div>
+  <div id='g-header-201511' style='height: 160px;'></div>
   <div id='g-container'>
     <h1 class='m-page-title'>I love you ~</h1>
 
-    <div class='m-page-container'>
+    <div class='m-page-container' style='color: goldenrod; margin-bottom: 200px; border-radius: 6px; font-weight: bolder; font-size: 16px; padding: 10px 10px; background:rgba(255, 255, 255, 0.8)!important; filter:Alpha(opacity=80); background:#fff;'>
       <p>我有多种方式想你，但是总是不知道该从哪一步做起。</p>
       <p>这一个月里，经常梦到你，然后工作之余，总会去想到你，看看你的照片，翻翻那进不去的QQ空间，虽然被挡在外边，但是，也经常去看。</p>
       <p>把你的名字设置到我的常用密码，qq密码，邮箱密码等等，这样也会经常想你了。</p>
