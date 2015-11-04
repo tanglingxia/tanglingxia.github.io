@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 #g-header {
@@ -9,7 +9,7 @@ body {
 }
 
 #g-container {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   line-height: 1.8em;
 }
@@ -17,7 +17,7 @@ body {
 #g-container h1.m-page-title {
   margin: 1em 0;
   text-align: center;
-  font-size: 52px;
+  font-size: 3em;
   color: orchid;
   font-family: monospace;
 }
