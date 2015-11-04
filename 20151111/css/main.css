@@ -8,6 +8,12 @@ body {
   height: 200px;
 }
 
+#g-container {
+  width: 1024px;
+  margin: 0 auto;
+  line-height: 1.8em;
+}
+
 #g-container h1.m-page-title {
   margin: 1em 0;
   text-align: center;
