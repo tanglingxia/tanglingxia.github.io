@@ -9,10 +9,45 @@
   <script type='text/javascript' src='../javascripts/vendor/snowfall.jquery.js'></script>
   <script type='text/javascript' src='./js/main.js'></script>
   <script type='text/javascript'>
+    $(document).ready(function() {
+      $(document).snowfall('clear');
+      $(document).snowfall({
+        image: "./images/rose.png",
+        flakeCount: 22,
+        minSize: 16,
+        maxSize: 48
+      });
+
+      var scrollImageNames = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg'];
+
+      var changeBackgroundByName = function(name) {
+        $('body').css('background', "url(./images/scroll/" + name + ") no-repeat center top");
+        $('body').css('background-attachment', "fixed");
+      }
+
+      var randomChangeBackground = function() {
+        changeBackgroundByName(scrollImageNames[Math.ceil(Math.random() * scrollImageNames.length - 1)]);
+      }
+
+      window.setTimeout(function() {
+        randomChangeBackground();
+      }, 1000);
+
+      window.setInterval(function() {
+        randomChangeBackground();
+      }, 1000 * 40);
+    });
   </script>
 </head>
 <body>
-  <img src='./images/ali-shangxin.gif' alt='伤心' title='伤心'/>
+  <div id='g-header-201511' style='height: 160px;'></div>
+  <div id='g-container'>
+    <h1 class='m-page-title'>I love you ~</h1>
+
+    <div class='m-page-container' style='color: goldenrod; margin-bottom: 200px; border-radius: 6px; font-weight: bolder; font-size: 16px; padding: 10px 10px; background:rgba(255, 255, 255, 0.8)!important; filter:Alpha(opacity=80); background:#fff;'>
+      <p>waiting...</p>
+    </div>
+  </div>
   <div style='display: none'>
     <script language="javascript" type="text/javascript" src="http://js.users.51.la/18663083.js"></script>
     <noscript><a href="http://www.51.la/?18663083" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18663083.asp" style="border:none" /></a></noscript>
